@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="graftest.EmailPage"
+             Title="Меню почты">
+    <ContentPage.Content>
+        <StackLayout>            
+            <Label Text="Email" ></Label>
+            <Entry WidthRequest="100" Keyboard="Email" x:Name="EmailE" ></Entry>
+            <Label Text="Пароль" ></Label>
+            <Entry WidthRequest="100"  x:Name="PassE" IsPassword="True" ></Entry>
+            <Button Text="Входящие" WidthRequest="130" HeightRequest="50" Clicked="getPage" Margin="50,0,50,20"></Button>
+            <Button Text="Написать" WidthRequest="130" HeightRequest="50" Clicked="sendPage" Margin="50,0,50,20"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

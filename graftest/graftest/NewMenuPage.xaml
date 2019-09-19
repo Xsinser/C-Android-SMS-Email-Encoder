@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="graftest.NewMenuPage"
+             Title="Главное меню"  >
+    <ContentPage.Content>
+        <StackLayout>
+            <Button WidthRequest="130" HeightRequest="50" Text="Меню электронной почты" x:Name="EmailB" Clicked="EmailPage"   VerticalOptions="Start" Margin="50,0,50,20"></Button>
+
+            <Label HorizontalOptions="Center" VerticalOptions="Center" Text="Выберете режим работы с Email или SMS"></Label>
+
+            <!--<Button WidthRequest="130" HeightRequest="50" Text="SMS Send" x:Name="SMSs" Clicked="SmsSend"  Margin="50,60,50,0"></Button>-->
+            <!--<Button WidthRequest="130" HeightRequest="50" Text="SMS" x:Name="SMSg" Clicked="SmsGet"   Margin="50,5"></Button>-->
+
+            <!--<StackLayout Spacing="10">
+            <Button WidthRequest="80" HeightRequest="30" Text="Email" x:Name="EmailB" Clicked="EmailBClick" HorizontalOptions="Center" VerticalOptions="Start"></Button>
+            -->
+            <!--<Label HorizontalOptions="Center" VerticalOptions="Center" Text="Выберете режим работы с Email или SMS"></Label>-->
+
+            <Button WidthRequest="130" HeightRequest="50" Text="Написать SMS" x:Name="SMSs" Clicked="SmsSend"  Margin="50,60,50,0"></Button>
+            <Button WidthRequest="130" HeightRequest="50" Text="Входящие SMS" x:Name="SMSg" Clicked="SmsGet"   Margin="50,5"></Button>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

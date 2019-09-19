@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="graftest.ListSmsContacsOrNumbers"
+             Title="Список номеров и контактов">
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView x:Name="Listv"  ItemSelected="SLelectItem">
+                XHTML
+
+    <!--<ListView.ItemTemplate>
+      <DataTemplate>
+        <ViewCell>
+                            <AbsoluteLayout>
+                                <Label HorizontalOptions="Fill" Text="{Binding Name}" TextColor="Black"></Label>
+                            </AbsoluteLayout>         
+                        </ViewCell>
+      </DataTemplate>
+    </ListView.ItemTemplate>-->
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

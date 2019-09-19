@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="graftest.SendSms"
+             Title="Отправка SMS">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Адресат" ></Label>
+            <Entry WidthRequest="100" Keyboard="Telephone" x:Name="AdressEmail" ></Entry>
+            <Label Text="Текст" ></Label>
+            <Label Text="0 из 50" x:Name="CountChr" HorizontalOptions="End"></Label>
+            <Editor WidthRequest="100" HeightRequest="100" x:Name="BodyEmail" TextChanged="TxtCn"></Editor>
+            <Label Text="Шифроватние" ></Label>
+            <Switch x:Name="IsEnc" HorizontalOptions="Start"></Switch>
+            <Button Text="Отправить" WidthRequest="130" HeightRequest="50" Margin="50,0,50,20" Clicked="SendClik"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

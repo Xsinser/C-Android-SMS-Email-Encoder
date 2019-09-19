@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="graftest.SmsPage"
+             Title="Меню SMS">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="25" />
+                <RowDefinition Height="35" />
+                <RowDefinition Height="25" />
+                <RowDefinition Height="35" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="120" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="35" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="35" />
+            </Grid.ColumnDefinitions>
+            <Label Text="Номер телефона" Grid.Row="0" Grid.Column="1"></Label>
+            <Entry WidthRequest="100" Keyboard="Telephone"  x:Name="PNumber" Grid.Row="1" Grid.Column="1"></Entry>
+            
+            <Button Text="Входящие" Grid.Row="5" Grid.Column="0" Clicked="SmsGet"></Button>
+            <Button Text="Написать" Grid.Row="5" Grid.Column="2" Clicked="SmsSend"></Button>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

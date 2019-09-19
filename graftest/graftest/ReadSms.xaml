@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="graftest.ReadSms" Title="Чтение SMS">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+
+                <Label Text="От кого:" />
+                <Label x:Name="Adresslb" FontSize="Medium" Margin="0,10"/>
+                <Label Text="Текст:" />
+                <Label x:Name="Textlb" FontSize="Medium" Margin="0,10"/>
+                <Label Text="Шифроватние" ></Label>
+                <Switch x:Name="IsEnc" HorizontalOptions="Start" Toggled="Chng"></Switch>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
